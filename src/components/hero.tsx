@@ -26,7 +26,7 @@ export const Hero = () => {
             Its me <span className="text-[#915eff]">Saurabh Kumar Rai</span>
           </h1>
 
-          {/* Add the Typewritter effect */}
+          {/* Added the Typewritter effect */}
           <h1 className={cn(styles.heroHeadText, "text-white")}>
             I'm
             <span className="text-[#915eff]">
