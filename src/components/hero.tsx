@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-
 import { ComputersCanvas } from "./canvas";
 import { styles } from "../styles";
 import { cn } from "../utils/lib";
+import Typewriter from 'typewriter-effect';
 
 // Hero
 export const Hero = () => {
@@ -23,12 +23,24 @@ export const Hero = () => {
         {/* About Me */}
         <div>
           <h1 className={cn(styles.heroHeadText, "text-white")}>
-            Hi, I'm <span className="text-[#915eff]">Saurabh Kumar Rai</span>
+            Its me <span className="text-[#915eff]">Saurabh Kumar Rai</span>
           </h1>
-          <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
+          <h1 className={cn(styles.heroHeadText, "text-white")}>
+            I'm
+            <span className="text-[#915eff]">
+              <Typewriter
+                options={{
+                  strings: ['Student', 'Web Developer', 'Frontend Developer'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
+          </h1>
+          {/* <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
             I replicate this 3D visuals, user <br className="sm:block hidden" />
             interfaces and web applications clone
-          </p>
+          </p> */}
         </div>
       </div>
 
